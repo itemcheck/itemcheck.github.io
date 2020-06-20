@@ -1,6 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="icon" type="image/jpg"  href="/icon.jpg"/>
+<title>Check any item</title>
+<style type="text/css">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -15,6 +20,7 @@
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
+  margin-top: 25px;
   margin-bottom: 22px;
 }
 
@@ -38,11 +44,53 @@
 #myUL li a:hover:not(.header) {
   background-color: #FA8072;
 }
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
 </style>
 </head>
-<body>
 
-<h2>My Phonebook</h2>
+
+<!-- Top navigation -->
+<div class="topnav">
+
+  
+  <!-- Left-aligned links (default) -->
+  <a href="/index.html" class="active"><font size=7px>Goto Home Page</font></a>
+
+  <!-- Right-aligned links -->
+  <div class="topnav-right">
+    <a href="/search.html" class="active"><font size=7px>Quick Search</font></a>
+  </div>
+  
+</div>
+
 
 <input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
@@ -70,6 +118,5 @@ function myFunction() {
     }
 }
 </script>
-
 </body>
 </html>
